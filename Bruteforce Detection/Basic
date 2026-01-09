@@ -1,3 +1,0 @@
-index=* sourcetype=WinEventLog:Security EventCode=4625
-| stats count by src_ip, user
-| where count > 10
