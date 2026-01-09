@@ -1,0 +1,3 @@
+index=* sourcetype=WinEventLog:Security EventCode=4625
+| stats count AS failures by src_ip, user
+| where failures > 10
