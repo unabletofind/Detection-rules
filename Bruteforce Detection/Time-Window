@@ -1,4 +1,0 @@
-index=botsv1 sourcetype=WinEventLog:Security EventCode=4625
-| bin _time span=15m
-| stats count by src_ip, _time
-| where count > 20
